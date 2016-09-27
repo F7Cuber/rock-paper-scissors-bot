@@ -1,0 +1,27 @@
+{
+  "name": "rock-paper-scissors-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot gamer",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodinwow/rock-paper-scissors-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "author": "Eugene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodinwow/rock-paper-scissors-bot/issues"
+  },
+  "homepage": "https://github.com/rodinwow/rock-paper-scissors-bot#readme",
+  "dependencies": {
+    "node-emoji": "^1.4.1",
+    "node-telegram-bot-api": "^0.23.3"
+  }
+}
