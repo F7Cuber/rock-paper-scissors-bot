@@ -1,8 +1,8 @@
 # Telegram Bot
 
-config.json structure:
-
 ### Check @RockPaperScissorsGamerBot on Telegram
+
+`config.json` structure:
 
 ```
 {
@@ -14,14 +14,14 @@ config.json structure:
   },
   "mongoose": {
     "options": {
-    	"config": {
-    		"autoIndex": false
-    	},
-    	"server": {
-    		"socketOptions": {
-    			"keepAlive": 1
-    		}
-    	}
+      "config": {
+        "autoIndex": false
+      },
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
     },
     "userURI": "YOUR MONGOLAB USER CONNECTION"
   }

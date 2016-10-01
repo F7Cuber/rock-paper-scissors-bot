@@ -32,11 +32,11 @@ var about = `This @RockPaperScissorsGamerBot is created by @evgrdn.
 Fork me on github https://github.com/rodinwow ${emoji.get(':wink:')}`;
 var game_started = false;
 var userInfo = {
-		id: 0,
-		wins: 0,
-		draws: 0,
-		looses: 0
-	};
+	id: 0,
+	wins: 0,
+	draws: 0,
+	looses: 0
+};
 
 module.exports = (message, bot) => {
 
@@ -52,7 +52,7 @@ module.exports = (message, bot) => {
 
 	var game = gameEngine(bot, chatId, SIGNS);
 
-		userInfo.name= message.from.first_name;
+	userInfo.name = message.from.first_name;
 
 	if (isMessage(msg, 'start')) {
 
@@ -99,9 +99,7 @@ module.exports = (message, bot) => {
 	}
 
 	if (isMessage(msg, 'stats')) {
-
 		bot.sendMessage(chatId, setInfoMessage(userInfo));
-
 	}
 
 	if (isMessage(msg, 'how to')) {
