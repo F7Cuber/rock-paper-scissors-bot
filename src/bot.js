@@ -8,14 +8,14 @@ const options = config.mongoose.options;
 const userURI = config.mongoose.userURI;
 
 mongoose.connect(userURI, options, (err) => {
-  if (err) console.log('Mongoose default connection error!' + err);
+	if (err) console.log('Mongoose default connection error!' + err);
 });
 mongoose.Promise = global.Promise;
 
 module.exports.start = () => {
-    bot.getMe().then(me => console.log(me));
-    bot.on('message', (msg)=>{
-      handlers(msg,bot);
-    });
-    module.exports.bot = bot;
-  };
+	bot.getMe().then(me => console.log(me));
+	bot.on('message', (msg) => {
+		handlers(msg, bot);
+	});
+	module.exports.bot = bot;
+};
