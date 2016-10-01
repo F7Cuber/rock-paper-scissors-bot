@@ -53,7 +53,7 @@ module.exports = (message, bot) => {
 	var game = gameEngine(bot, chatId, SIGNS);
 
 		userInfo.name= message.from.first_name;
-		
+
 	if (isMessage(msg, 'start')) {
 
 		bot.sendMessage(chatId, `Hello, ${userInfo.name}!`);
@@ -88,7 +88,7 @@ module.exports = (message, bot) => {
 
 		setTimeout(() => {
 			bot.sendMessage(chatId, 'Wanna play with me?', keyboards.main_menu);
-		}, 500);
+		}, 100);
 
 	}
 

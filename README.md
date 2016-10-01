@@ -2,7 +2,7 @@
 
 config.json structure:
 
-### @RockPaperScissorsGamerBot developing in progress...
+### Check @RockPaperScissorsGamerBot on Telegram
 
 ```
 {
