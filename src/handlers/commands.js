@@ -39,34 +39,26 @@ var userInfo = {
 };
 
 module.exports = (message, bot) => {
-
 	var msg = message.text;
-
 	var chatId = message.chat.id;
-
 	var userId = message.from.id;
 
-	var quiry = {
-		id: userId
-	};
-
+	var quiry = { id: userId };
 	var game = gameEngine(bot, chatId, SIGNS);
+	var result;
 
 	userInfo.name = message.from.first_name;
 
 	if (isMessage(msg, 'start')) {
-
 		bot.sendMessage(chatId, `Hello, ${userInfo.name}!`);
-
 	}
 
 	if (isMessage(msg, 'start') || isMessage(msg, 'menu')) {
-
 		game_started = false;
 
 		User.findOne(quiry, (err, _user) => {
-			if (err)
-				throw new Error('db-connect error');
+			if (err) throw new Error('db-connect error');
+
 			if (!_user) {
 				new User({
 					id: userId,
@@ -89,7 +81,6 @@ module.exports = (message, bot) => {
 		setTimeout(() => {
 			bot.sendMessage(chatId, 'Wanna play with me?', keyboards.main_menu);
 		}, 100);
-
 	}
 
 	if (msg == 'Play' || msg == '/game' || msg == 'Continue') {
@@ -114,16 +105,15 @@ module.exports = (message, bot) => {
 		(msg == SIGNS.paper && game_started) ||
 		(msg == SIGNS.scissors && game_started)) {
 
-		var result = game.start(msg);
+		result = game.start(msg);
 
 		setTimeout(() => {
 			bot.sendMessage(chatId, result, keyboards.game_continue);;
 		}, 100);
 
 		User.findOne(quiry, (err, _user) => {
+			if (err) throw new Error('db-connect error');
 
-			if (err)
-				throw new Error('db-connect error');
 			if (result == 'Draw!')
 				_user.draws += 1;
 			else if (result == 'You win!')
