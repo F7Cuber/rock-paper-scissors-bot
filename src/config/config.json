@@ -1,6 +1,6 @@
 {
 	"telegram": {
-		"token": "YOUR TELEGRAM BOT TOKEN",
+		"token": "266577253:AAFVVmV_byCzxygUSVJI7InYGdbe8ml89yA",
 		"options": {
 			"polling": true
 		}
@@ -16,6 +16,6 @@
 				}
 			}
 		},
-		"userURI": "YOUR MONGOLAB USER CONNECTION"
+		"userURI": "mongodb://root:12345678@ds033966.mlab.com:33966/rpc_telegram_bot_db"
 	}
 }

@@ -1,9 +1,18 @@
 # Telegram Bot
 
-### Check @RockPaperScissorsGamerBot on Telegram
+### Check @RockPaperScissorsGamerBot 👊✋✌️ on Telegram 
 
-`config.json` structure:
+## Installation
 
+```bash
+git clone https://github.com/rodinwow/rock-paper-scissors-bot.git
+rock-paper-scissors-bot
+npm install
+npm start
+```
+***Attention***
+
+Don't forget to change telegram bot token and mongoose userURI:
 ```
 {
   "telegram": {
