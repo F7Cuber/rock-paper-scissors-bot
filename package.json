@@ -4,7 +4,7 @@
   "description": "Telegram bot gamer",
   "main": "src/app.js",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/rodinwow/rock-paper-scissors-bot#readme",
   "dependencies": {
+    "express": "^4.14.0",
     "mongoose": "^4.6.1",
     "node-emoji": "^1.4.1",
     "node-telegram-bot-api": "^0.23.3"
