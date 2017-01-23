@@ -4,7 +4,7 @@
   "description": "Telegram bot gamer",
   "main": "src/app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js -s hidden-esrpment-1249.herokuapp.com -l 3500 -m rc4 -k foobar -r 80"
   },
   "repository": {
     "type": "git",
