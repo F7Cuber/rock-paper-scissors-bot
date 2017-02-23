@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/rodinwow/rock-paper-scissors-bot.git
+git clone https://github.com/eugrdn/rock-paper-scissors-bot.git
 rock-paper-scissors-bot
 npm install
 npm start

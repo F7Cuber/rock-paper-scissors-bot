@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodinwow/rock-paper-scissors-bot.git"
+    "url": "git+https://github.com/eugrdn/rock-paper-scissors-bot.git"
   },
   "keywords": [
     "telegram",
@@ -17,9 +17,9 @@
   "author": "Eugene",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rodinwow/rock-paper-scissors-bot/issues"
+    "url": "https://github.com/eugrdn/rock-paper-scissors-bot/issues"
   },
-  "homepage": "https://github.com/rodinwow/rock-paper-scissors-bot#readme",
+  "homepage": "https://github.com/eugrdn/rock-paper-scissors-bot#readme",
   "dependencies": {
     "express": "^4.14.0",
     "mongoose": "^4.6.1",

@@ -28,8 +28,8 @@ Pay attention on result:
 		${SIGNS.scissors} > ${SIGNS.paper}
 If both players choose the same shape, the game is tied and is usually immediately replayed to break the tie.`;
 
-var about = `This @RockPaperScissorsGamerBot is created by @evgrdn. 
-Fork me on github https://github.com/rodinwow ${emoji.get(':wink:')}`;
+var about = `This @RockPaperScissorsGamerBot is created by @eugrdn. 
+Fork me on github https://github.com/eugrdn ${emoji.get(':wink:')}`;
 var game_started = false;
 var userInfo = {
 	id: 0,
